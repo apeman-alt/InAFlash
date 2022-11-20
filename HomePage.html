@@ -41,6 +41,7 @@
   <a href="Study.html" id = "Study.html">Study</a>
   <a href="Profile.html" id = "Profile.html">Profile</a>
   <a href="Saved.html" id = "Saved.html">Saved</a>
+  <a href="Summary.html" id = "Summary.html">Summary</a>
   <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
 
@@ -58,27 +59,28 @@ body {
 
 <!-- This is the DropDown List -->
   <div class="dropdown">
-    <button style="font-family:'Open Sans'" class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
-      <a href="#">Link 5</a>
-      <a href="#">Link 6</a>
-      <a href="#">Link 7</a>
-    </div>
+    
   </div>
 
 <!-- This is the Search Bar -->
     <div id="cover">
         <form method="get" action="">
           <div class="tb">
-            <div class="td"><input type="text" placeholder="Topic ...." required></div>
+            <div class="td">
+              <input id = "userInput" type="text" placeholder="Topic ...." required>
+            </div>
             <div class="td" id="s-cover">
-              <button type="submit">
-                <div id="s-circle"></div>
-                <span></span>
+              <button type = "submit" onclick = "returnText()" style="font-family:'Open Sans'" class="dropbtn">Dropdown</button>
+
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
+                <a href="#">Link 6</a>
+                <a href="#">Link 7</a>
+              </div>
               </button>
             </div>
           </div>
@@ -110,4 +112,7 @@ body {
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </div>
+
+      <script src="HomePage.js"></script>
+
 </html>
