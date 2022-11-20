@@ -1,166 +1,179 @@
-<!DOCTYPE html >
-<html class = "background">
-  
-<head>
-    <link rel="stylesheet" href="HomePage.css"/>
-    <meta charset="utf-8">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html class="background">
+  <head>
+    <link rel="stylesheet" href="HomePage.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS library -->
-    <link rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-    <link rel="stylesheet" href=
-"https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity=
-"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-  
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
     <!-- jQuery library -->
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
-  
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-    </script>
-  
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-    </script>
-  
-  <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Load an icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- This is the Navigation Bar -->
-<div class="topnav">
-  <a class="active" href="index.html" id = "index.html">Home</a>
-  <a href="Study.html" id = "Study.html">Study</a>
-  <a href="Profile.html" id = "Profile.html">Profile</a>
-  <a href="Saved.html" id = "Saved.html">Saved</a>
-  <a href="Summary.html" id = "Summary.html">Summary</a>
-  <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-</div>
+    <script src="bundle.js"></script>
 
-</head>
-  
-<style>
-body {
-  background: #24c6dc;
-  background: -webkit-linear-gradient(to bottom, #514a9d, #24c6dc);
-  background: linear-gradient(to bottom, #514a9d, #24c6dc);
-  }
-</style>
-<p class = "Writing" align = "center" style="font-family:'Open Sans'">Please Enter the Topic you would like to Learn.</p>
+    <!-- Load an icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<!-- This is the DropDown List -->
-<!-- </div>
+    <!-- This is the Navigation Bar -->
+    <div class="topnav">
+      <a class="active" href="index.html" id="index.html">Home</a>
+      <a href="Study.html" id="Study.html">Study</a>
+      <a href="Profile.html" id="Profile.html">Profile</a>
+      <a href="Saved.html" id="Saved.html">Saved</a>
+      <a href="Summary.html" id="Summary.html">Summary</a>
+      <a href="Login.html" id="Login.html"
+        ><i class="fa fa-fw fa-user"></i> Login</a
+      >
+    </div>
+  </head>
 
-class="dropdown"
-    
-</div> --> -->
+  <style>
+    body {
+      background: #24c6dc;
+      background: -webkit-linear-gradient(to bottom, #514a9d, #24c6dc);
+      background: linear-gradient(to bottom, #514a9d, #24c6dc);
+    }
+  </style>
+  <p class="Writing" align="center" style="font-family: 'Open Sans'">
+    Please Enter the Topic you would like to Learn.
+  </p>
 
-<!-- This is the Search Bar -->
-    <div id="cover">
-        <form method="get" action=" ">
-          <div class="tb">
-            <div class="td">
-              <input id = "userInput" type="text" placeholder="Topic ...." required>
-            </div>
-            <div class="td" id="s-cover">
-              <button type = "submit" onclick = "returnText()" style="font-family:'Open Sans'" class="dropbtn">Dropdown</button>
-              
-              <!-- This is the DropDown List -->
-</div>
+  <!-- This is the DropDown List -->
+  <!-- </div>
 
 class="dropdown"
     
 </div> -->
+  -->
 
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <a href="#">Link 4</a>
-                <a href="#">Link 5</a>
-                <a href="#">Link 6</a>
-                <a href="#">Link 7</a>
-                <!-- This is the DropDown List -->
-              </div>
-              </button>
-            </div>
+  <!-- This is the Search Bar -->
+  <div class="coverContainer">
+    <div id="cover">
+      <form method="get" action=" ">
+        <div class="tb">
+          <div class="td">
+            <input
+              id="userInput"
+              type="text"
+              placeholder="Topic ...."
+              required
+            />
           </div>
-        </form>
-      </div>
+          <div class="td" id="s-cover">
+            <button
+              type="submit"
+              onclick="returnText()"
+              style="font-family: 'Open Sans'"
+              class="dropbtn"
+            >
+              Dropdown
+            </button>
 
-    <h3 id="theList"></h3>
+            <!-- This is the DropDown List -->
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
 
-    <!-- This is the footer links-->
-    <div id= "footer">
+      <h3 id="theList"></h3>
+    </div>
+  </div>
+
+  <!-- This is the footer links-->
+  <div id="footer">
     <footer class="footer">
-        <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        
-        </ul>
-        
-        <p align = "left">&copy;2021 Copy Right | All Rights Reserved</p>
-        
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      </div>  
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
 
-      <script>
-        hello();
+      <p align="left">&copy;2021 Copy Right | All Rights Reserved</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </div>
 
-        const USER_PROMPT = "Give me a list of topics about biology:";
-        const QUANTITY = 1;
-        const WAIT_TIME = 4000;
-        var myText3 = getInfo(USER_PROMPT, QUANTITY);
+  <script>
+    hello();
 
-        function runStudyTopics() {
-                        var text = myText0.trim();
+    const USER_PROMPT = "Give me a list of topics about biology:";
+    const QUANTITY = 1;
+    const WAIT_TIME = 4000;
+    var myText3 = getInfo(USER_PROMPT, QUANTITY);
 
-                        var fields = text.split("\n");
-                        fields.length = 5;
-                        
-                        for (let i = 0; i < fields.length; i++) {
-                                fields[i] = fields[i].replace("-", "");
-                        }
+    function runStudyTopics() {
+      var text = myText0.trim();
 
-                        var list = "";
-                        for (let i = 0; i < fields.length; i++) {
-                                list+=fields[i]+"\n";
-                        }
+      var fields = text.split("\n");
+      fields.length = 5;
 
-                        document.getElementById("theList").innerText = list;
-         }
+      for (let i = 0; i < fields.length; i++) {
+        fields[i] = fields[i].replace("-", "");
+      }
 
+      var list = "";
+      for (let i = 0; i < fields.length; i++) {
+        list += fields[i] + "\n";
+      }
 
-         function timeFunction() {
-                setTimeout(function(){ runStudyTopics(); }, WAIT_TIME*QUANTITY);
-         }
+      document.getElementById("theList").innerText = list;
+    }
 
-         timeFunction();
+    function timeFunction() {
+      setTimeout(function () {
+        runStudyTopics();
+      }, WAIT_TIME * QUANTITY);
+    }
 
-        
-      </script>
-
+    timeFunction();
+  </script>
 </html>
