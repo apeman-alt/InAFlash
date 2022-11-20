@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+html {
+    height: 100%;
+  }
+  body {
+    height: 800px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom,#514a9d, #24c6dc);
+  }
+
+
+
+/* ---------------------------------- NAVBAR STUFF ---------------------------------- */
+
+.topnav {
+    background-color: #333;
+    position: fixed; 
+    top: 0; left: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    height: 50px; 
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+  }
+
+/* ---------------------------------- NAVBAR STUFF ---------------------------------- */
+
+
+
+.quiz-container {
+    background-color: #fff;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    height: 600px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align:  center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+
+button {
+    background-color: #03cae4;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+button:hover{
+    background-color: #514a9d;
+}
+
+button:focus {
+    outline: none;
+    background-color: green;
+}
+
+/*This is the Footer Editing Section*/
+.footer {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+    background: grey;
+    min-height: 100px;
+    height: 130px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Quizzes.css">
+
+    <title>Quiz</title>
+
+    <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href=
+    "https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity=
+    "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous">
+        
+        <!-- jQuery library -->
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+        </script>
+        
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        </script>
+    
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <!-------------- NAVBAR STUFF ------------------------------------------- -->
+    <div class="topnav">
+        <a class="active" href="HomePage.html" id = "HomePage.html">Home</a>
+        <a href="Study.html" id = "Study.html">Study</a>
+        <a href="Profile.html" id = "Profile.html">Profile</a>
+        <a href="Saved.html" id = "Saved.html">Saved</a>
+        <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+    <!-------------- NAVBAR STUFF ------------------------------------------- -->
+
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question"></h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+    <script src ="Quizzes.js"></script>
+</body>
+
+
+<!-- This is the footer links-->
+<div id= "footer">
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        
+        <p>&copy;2021 Copy Right | All Rights Reserved</p>
+        
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+</html>
