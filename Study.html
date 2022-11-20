@@ -1,42 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="en">   
+<html lang="en">
   <head>
-
-    <link rel="stylesheet" href="Study.css"/>
-        <!-- Bootstrap CSS library -->
-        <link rel="stylesheet" href=
-        "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-          
-            <link rel="stylesheet" href=
-        "https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-                integrity=
-        "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-                crossorigin="anonymous">
-          
-            <!-- jQuery library -->
-            <script src=
-        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-            </script>
-          
-            <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-            </script>
-          
-            <script src=
-        "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-            </script>
-        
-        <!-- Load an icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href = "Study.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -44,93 +9,61 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-      crossorigin="anonymous" >
-    </head>
+      crossorigin="anonymous"
 
-    
-
-
-  
-  <body>
-   
-
-  </div>
-    
-    <!-- background for some reason-->
+    />
+      <body
+      ><!-------------- NAVBAR STUFF ------------------------------------------- -->
+        <div class="topnav">
+            <a class="active" href="HomePage.html" id = "HomePage.html">Home</a>
+            <a href="Study.html" id = "Study.html">Study</a>
+            <a href="Profile.html" id = "Profile.html">Profile</a>
+            <a href="Saved.html" id = "Saved.html">Saved</a>
+            <a href="Summary.html" id = "Summary.html">Summary</a>
+            <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+        <!-------------- NAVBAR STUFF ------------------------------------------- -->
     <div class="wrapper">
-       <!-- This is the Navigation Bar -->
-<div class="topnav">
-  <a class="active" href="HomePage.html" id = "HomePage.html">Home</a>
-  <a href="Study.html" id = "Study.html">Study</a>
-  <a href="Profile.html" id = "Profile.html">Profile</a>
-  <a href="Saved.html" id = "Saved.html">Saved</a>
-  <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-</div>
-    
       <div class="box">
-   
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-    <!-- Clear Button-->
     <button id="clear" class="clear btn">
       <i class="fas fa-trash"></i> Clear Cards
     </button>
 
-    <!-- This is the footer links-->
-    <div id= "footer">
-        <footer class="footer">
-            <ul class="social-icon">
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-              <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-            
-            </ul>
-            
-            <p>&copy;2021 Copy Right | All Rights Reserved</p>
-            
-          </footer>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-          </div>
-
-    <!-- Flash Card Display-->
     <h1>
-        <!-- Flash cards text-->
-        Flash Cards
+      Flash Cards
       <button id="show" class="btn btn-small">
         <i class="fas fa-plus"></i> Add New Card
       </button>
     </h1>
 
     <div id="cards-container" class="cards">
-    
+
     </div>
 
-    <!-- Arrows for Navigation at the Bottom-->
     <div class="navigation">
-        <!-- Left Arrow-->
       <button id="prev" class="nav-button">
         <i class="fas fa-arrow-left"></i>
       </button>
 
       <p id="current"></p>
 
-      <!-- Right Arrow-->
       <button id="next" class="nav-button">
         <i class="fas fa-arrow-right"></i>
       </button>
     </div>
 
-    <!-- Add New Card Button-->
     <div id="add-container" class="add-container">
       <h1>
         Add New Card
@@ -154,41 +87,6 @@
       </button>
     </div>
 
-    
+    <script src="Study.js"></script>
   </body>
-
-  <!-- This is the footer links-->
-  <div id= "footer">
-    <footer class="footer">
-        <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        
-            <br>
-
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Study</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Profile</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Settings</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Login</a></li>
-        </ul>
-        
-        <p align = "left">&copy;2021 Copy Right | All Rights Reserved</p>
-        
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      </div>
-
-      <script src="Study.js"></script>
 </html>
