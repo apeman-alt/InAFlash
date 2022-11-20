@@ -1,116 +1,182 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-<!-- Bootstrap CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<!-- Font Awesome CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-<link rel="stylesheet" href="profile.css">
-<!--<link rel="stylesheet" href="css/profile.css">-->
-	
-	<!-------------- NAVBAR STUFF ------------------------------------------- -->
-    <div class="topnav">
-        <a class="active" href="index.html" id = "index.html">Home</a>
-        <a href="Study.html" id = "Study.html">Study</a>
-        <a href="Profile.html" id = "Profile.html">Profile</a>
-        <a href="Saved.html" id = "Saved.html">Saved</a>
-        <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-    </div>
-    <!-------------- NAVBAR STUFF ------------------------------------------- -->
+    <link rel="stylesheet" href="Profile.css">
+        <!-- Bootstrap CSS library -->
+        
+        <link rel="stylesheet" href=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          
+            <link rel="stylesheet" href=
+        "https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+                integrity=
+        "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+                crossorigin="anonymous">
+          
+            <!-- jQuery library -->
+            <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+            </script>
+          
+            <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+            </script>
+          
+            <script src=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+            </script>
+        
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-	body {
-    background: #3c0841;
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    color: #000;
-}
-.student-profile .card {
-    border-radius: 10px;
-}
-.student-profile .card .card-header .profile_img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 10px solid #ccc;
-    border-radius: 50%;
-}
-.student-profile .card h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-.student-profile .card p {
-    font-size: 16px;
-    color: #000;
-}
-.student-profile .table th,
-.student-profile .table td {
-    font-size: 14px;
-    padding: 5px 10px;
-    color: #000;
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+    
+  
+    
 
-</style>
-
-</head>
-
-<div class="profile">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card shadow-sm">
-            <div class="card-header bg-transparent text-center">
-              <img class="profile_img" src="profile_pic.jpeg" alt="student dp">
-              <h3>Flash!</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="card shadow-sm">
-            <div class="card-header bg-transparent border-0">
-              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
-            </div>
-            <div class="card-body pt-0">
-              <table class="table table-bordered">
-                <tr>
-                  <th width="30%">Username</th>
-                  <td>Flash03</td>
-                </tr>
-                <tr>
-                  <th width="30%">Password</th>
-                  <td>*********</td>
-                </tr>
-                <tr>
-                    <th width="30%">Past Quizzes</th>
-                    <td><button type="button">Show Me!</button></td>
-                  </tr>
-                <tr>
-                  <th width="30%">Total Score</th>
-                  <td>1738</td>
-                </tr>
-                <tr>
-                    <th width="30%">Customize Avatar</th>
-                    <td><button type="button">Customize</button></td>
-                  </tr>
-              </table>
-            </div>
-          </div>
-            <div style="height: 26px"></div>
-          <div class="card shadow-sm">
-            <div class="card-header bg-transparent border-0">
-              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Other Information</h3>
-            </div>
-            <div class="card-body pt-0">
-                <p>This is a box where you can tell us more about yourself! School, program, hobbies, etc.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- This is the Navigation Bar -->
+<div class="topnav">
+    <a class="active" href="HomePage.html" id = "HomePage.html">Home</a>
+    <a href="Study.html" id = "Study.html">Study</a>
+    <a href="Profile.html" id = "Profile.html">Profile</a>
+    <a href="Saved.html" id = "Saved.html">Saved</a>
+    <a href="Summary.html" id = "Summary.html">Summary</a>
+    <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
   </div>
+  
+  <style>
+    #overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+    
+    #text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 50px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+    }
+    </style>
+    </head>
+       
+    <div class="profile">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent text-center">
+                  <img class="profile_img" src="profile_pic.jpeg" alt="student dp">
+                  <h3>Flash!</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent border-0">
+                  <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+                </div>
+                <div class="card-body pt-0">
+                  <table class="table table-bordered">
+                    <tr>
+                      <th width="30%">Username</th>
+                      <td>Flash03</td>
+                    </tr>
+                    <tr>
+                      <th width="30%">Password</th>
+                      <td>*********</td>
+                    </tr>
+                    <tr>
+                        <th width="30%">Past Quizzes</th>
+                        <td><a href = "Saved.html" id = "Saved.html" type="button">Show Me!</a></td>
+                      </tr>
+                    <tr>
+                      <th width="30%">Total Score</th>
+                      <td>1738</td>
+                    </tr>
+                    <tr>
+                      <div id="overlay" onclick="off()">
+                        <img class = "image" src = "https://thumbs.dreamstime.com/b/people-avatar-smiling-human-circle-portrait-female-male-person-round-avatars-flat-icon-vector-illustration-teens-adult-153736296.jpg">
+                      </div>
+                      
+                      
+                      
+                      
 
+                        <th width="30%">Customize Avatar</th>
+                        <th><button onclick="on()">Customize</button></th>
+                      
+                        <script>
+                          
+                          function on() {
+                            document.getElementById("overlay").style.display = "block";
+                          }
+                          
+                          function off() {
+                            document.getElementById("overlay").style.display = "none";
+                          }
+                          </script>
+                        
+                      </tr>
+                  </table>
+                </div>
+              </div>
+                <div style="height: 26px"></div>
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent border-0">
+                  <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Other Information</h3>
+                </div>
+                <div class="card-body pt-0">
+                    <p>Biography.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- This is the footer links-->
+    <div id= "footer">
+        <footer class="footer">
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+
+            </ul>
+            
+            <p align = "left">&copy;2021 Copy Right | All Rights Reserved</p>
+            
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          </div>
 </html>
