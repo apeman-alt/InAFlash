@@ -103,6 +103,8 @@
 .tb {
   display: table;
   width: 100%;
+  position: absolute;
+  left: 100px;
 }
 
 .td {
