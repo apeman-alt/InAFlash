@@ -64,8 +64,8 @@
   } */
   .dropdown {
     position: absolute;
-    left:50px;
-    top: 30px;
+    left:200px;
+    top: 150px;
     display: inline-block;
   }
   
