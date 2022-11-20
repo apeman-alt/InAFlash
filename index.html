@@ -29,6 +29,8 @@
     <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     </script>
+  
+  <script src="bundle.js"></script>
 
 <!-- Load an icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -111,8 +113,42 @@ body {
       </footer>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      </div>
+      </div>  
 
-      <script src="HomePage.js"></script>
+      <script>
+        hello();
+
+        const USER_PROMPT = "Give me a list of topics about biology:";
+        const QUANTITY = 1;
+        const WAIT_TIME = 4000;
+        var myText3 = getInfo(USER_PROMPT, QUANTITY);
+
+        function runStudyTopics() {
+                        var text = myText0.trim();
+
+                        var fields = text.split("\n");
+                        fields.length = 5;
+                        
+                        for (let i = 0; i < fields.length; i++) {
+                                fields[i] = fields[i].replace("-", "");
+                        }
+
+                        var list = "";
+                        for (let i = 0; i < fields.length; i++) {
+                                list+=fields[i]+"\n";
+                        }
+
+                        document.getElementById("theList").innerText = list;
+         }
+
+
+         function timeFunction() {
+                setTimeout(function(){ runStudyTopics(); }, WAIT_TIME*QUANTITY);
+         }
+
+         timeFunction();
+
+        
+      </script>
 
 </html>
