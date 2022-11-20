@@ -28,7 +28,7 @@
   }
 body {
 
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-color: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .student-profile .card {
     border-radius: 10px;
