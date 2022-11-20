@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href = "Study.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+
+    />
+
+    <script src="bundle.js"></script>
+  </head>
+      <body
+      ><!-------------- NAVBAR STUFF ------------------------------------------- -->
+        <div class="topnav">
+            <a class="active" href="index.html" id = "index.html">Home</a>
+            <a href="Study.html" id = "Study.html">Study</a>
+            <a href="Profile.html" id = "Profile.html">Profile</a>
+            <a href="Saved.html" id = "Saved.html">Saved</a>
+            <a href="Summary.html" id = "Summary.html">Summary</a>
+            <a href="Login.html" id = "Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+        <!-------------- NAVBAR STUFF ------------------------------------------- -->
+    <div class="wrapper">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <button id="clear" class="clear btn">
+      <i class="fas fa-trash"></i> Clear Cards
+    </button>
+
+    <h1>
+      Flash Cards
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i> Add New Card
+      </button>
+    </h1>
+
+    <div id="cards-container" class="cards" style="background-color:white;">
+	<h3 id="content"></h3>
+    </div>
+
+    <div class="navigation">
+      <button id="prev" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+      <p id="current"></p>
+
+      <button id="next" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div id="add-container" class="add-container">
+      <h1>
+        Add New Card
+        <button id="hide" class="btn btn-small btn-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </h1>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Enter question..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
+      </div>
+
+      <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i> Add Card
+      </button>
+    </div>
+
+    <script>
+	hello();
+
+
+	let cardFront = ["0front", "1front", "2front"];
+	let cardBack = ["0back", "1back", "2back"];
+	let cardNum = 0;
+	let myCard = document.getElementById("cards-container");
+	let content = document.getElementById("content");
+	let rightArrow = document.getElementById("next");
+	let leftArrow = document.getElementById("prev");
+	let showingFront = true;
+
+	myCard.addEventListener("click", ()  => {
+		if (showingFront) {
+			showingFront = false;
+			content.innerText = cardBack[cardNum];
+		}
+		else {
+			showingFront = true;
+			content.innerText = cardFront[cardNum];
+		}
+		console.log(showingFront);
+		    });
+
+	rightArrow.addEventListener("click", () => {
+		if (cardNum < cardFront.length-1) cardNum +=1;
+
+		if (showingFront) content.innerText = cardFront[cardNum];
+		else content.innerText = cardBack[cardNum];
+	});
+
+	leftArrow.addEventListener("click", () => {
+		if (cardNum > 0) cardNum -= 1;
+
+		if (showingFront) content.innerText = cardFront[cardNum];
+		else content.innerText = cardBack[cardNum];
+	});
+
+	const USER_PROMPT = "Write me a question and answer about biology:";
+        const QUANTITY = 2;
+        const WAIT_TIME = 6000;
+                var myText3 = getInfo(USER_PROMPT, QUANTITY);
+
+                function runFlashcards() {
+                        var text = myText0.trim();
+
+                        //parse question and answer from text
+                        var fields = text.replace(/\n\n/g, "*")
+                        fields = fields.split("*");
+                        
+                        var question = "";
+                        var answer = "";
+
+                        for (let i = 0; i < fields.length; i++) {
+                                if (i%2 == 0) {
+                                        question+=fields[i]+"\n\n";
+                                }
+                                else {
+                                        answer+=fields[i]+"\n\n";
+                                }
+                        }
+
+			let questionList = [];
+			let answerList = [];
+			questionList = question.replace("\n\n", "*").split("*");
+			answerList = answer.replace("\n\n", "*").split("*");
+
+                        cardFront = questionList;
+			cardBack = answerList;
+			
+
+		}	
+
+                  
+
+
+                function timeFunction() {
+                        setTimeout(function(){ runFlashcards(); }, WAIT_TIME*QUANTITY);
+                }
+
+                timeFunction();
+
+
+
+	const cardsContainer = document.getElementById("cards-container");
+	const prevBtn = document.getElementById("prev");
+	const nextBtn = document.getElementById("next");
+	const currentEl = document.getElementById("current");
+	const showBtn = document.getElementById("show");
+	const hideBtn = document.getElementById("hide");
+	const questionEl = document.getElementById("question");
+	const answerEl = document.getElementById("answer");
+	const addCardBtn = document.getElementById("add-card");
+	const clearBtn = document.getElementById("clear");
+	const addContainer = document.getElementById("add-container");
+
+	// Keep track of current card
+	let currentActiveCard = 0;
+
+	// Store DOM cards
+	const cardsEl = [];
+
+	// Store card data
+	const cardsData = getCardsData();
+
+
+
+	// Create all cards
+	function createCards() {
+  		cardsData.forEach((data, index) => createCard(data, index));
+		
+	}
+
+	// Create a single card in DOM
+	function createCard(data, index) {
+  		const card = document.createElement("div");
+  		card.classList.add("card");
+
+  		if (index === 0) {
+    			card.classList.add("active");
+  		}
+
+  		card.innerHTML = `
+    			<div class="inner-card">
+          		<div class="inner-card-front">
+	   		<p>${data.question}</p>
+          		</div>
+          		<div class="inner-card-back">
+	   		<p>${data.answer}</p>
+          		</div>
+        		</div>
+      			</div>
+  `		;
+
+  		card.addEventListener("click", () => card.classList.toggle("show-answer"));
+
+  		// Add to DOM cards
+  		cardsEl.push(card);
+
+  		cardsContainer.appendChild(card);
+
+  		updateCurrentText();
+	}
+
+	// Show number of cards
+	function updateCurrentText() {
+  		currentEl.innerText = `${currentActiveCard + 1}/${cardsEl.length}`;
+	}
+
+	// Get cards from local storage
+	function getCardsData() {
+  		const cards = JSON.parse(localStorage.getItem("cards"));
+  		return cards === null ? [] : cards;
+	}
+
+	// Add card to local storage
+	function setCardsData(cards) {
+  		localStorage.setItem("cards", JSON.stringify(cards));
+  		window.location.reload();
+	}
+
+	createCards();
+
+	// Event listeners
+
+	// Show add container
+	showBtn.addEventListener("click", () => addContainer.classList.add("show"));
+
+	// Hide add container
+	hideBtn.addEventListener("click", () => addContainer.classList.remove("show"));
+
+	// Add new card
+	addCardBtn.addEventListener("click", () => {
+  		const question = questionEl.value;
+  		const answer = answerEl.value;
+
+  		if (question.trim() && answer.trim()) {
+    			const newCard = { question, answer };
+
+    			createCard(newCard);
+
+    			questionEl.value = "";
+    			answerEl.value = "";
+
+    			addContainer.classList.remove("show");
+
+    			cardsData.push(newCard);
+    			setCardsData(cardsData);
+  		}
+	});
+
+	// Clear cards button
+	clearBtn.addEventListener("click", () => {
+  		localStorage.clear();
+
+  		cardsContainer.innerHTML = "";
+  		window.location.reload();
+	});
+
+    </script>
+  </body>
+</html>
+
